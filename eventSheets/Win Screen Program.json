@@ -1,0 +1,52 @@
+{
+	"name": "Win Screen Program",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 334015516069812
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 112202573243422,
+					"parameters": {
+						"width": "3416",
+						"height": "1920"
+					}
+				}
+			],
+			"sid": 390482933158220
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 652837133430466,
+					"parameters": {
+						"key": 8
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 786427411185477,
+					"parameters": {
+						"layout": "Title Screen"
+					}
+				}
+			],
+			"sid": 929383402432376
+		}
+	],
+	"sid": 964073119543102
+}

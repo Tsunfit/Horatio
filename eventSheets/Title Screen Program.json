@@ -1,0 +1,146 @@
+{
+	"name": "Title Screen Program",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 633672063792229,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Start"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 805018080430987,
+					"parameters": {
+						"layout": "Level"
+					}
+				},
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 930840771311869,
+					"parameters": {
+						"slot": "\"levelsave\""
+					}
+				}
+			],
+			"sid": 511494499662726
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 375828035299324,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Restart"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 461357378729541,
+					"parameters": {
+						"layout": "Level"
+					}
+				},
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 347204549898873,
+					"parameters": {
+						"slot": "\"startsave\""
+					}
+				},
+				{
+					"id": "save",
+					"objectClass": "System",
+					"sid": 234459129004401,
+					"parameters": {
+						"slot": "\"levelsave\""
+					}
+				},
+				{
+					"id": "load",
+					"objectClass": "System",
+					"sid": 250444109064138,
+					"parameters": {
+						"slot": "\"levelsave\""
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 760414364282485,
+					"parameters": {
+						"variable": "Score"
+					}
+				}
+			],
+			"sid": 876965308955932
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 898447336025195
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 692624277429784,
+					"parameters": {
+						"width": "1708",
+						"height": "960"
+					}
+				}
+			],
+			"sid": 404957730129985
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 883505667497832,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Controls"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 885810865215490,
+					"parameters": {
+						"layout": "Controls"
+					}
+				}
+			],
+			"sid": 861665631837877
+		}
+	],
+	"sid": 765363944891169
+}

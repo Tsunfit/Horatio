@@ -1,0 +1,54 @@
+{
+	"name": "PauseProgram",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 459704651116108
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 810013722372663,
+					"parameters": {
+						"width": "1708",
+						"height": "960"
+					}
+				}
+			],
+			"sid": 177121290548635
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 919246540818139,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ContinueButton"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 597727867443879,
+					"parameters": {
+						"layout": "Level"
+					}
+				}
+			],
+			"sid": 211539503179032
+		}
+	],
+	"sid": 722111229677314
+}

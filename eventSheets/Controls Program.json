@@ -1,0 +1,52 @@
+{
+	"name": "Controls Program",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 322837077087758
+				}
+			],
+			"actions": [
+				{
+					"id": "set-canvas-size",
+					"objectClass": "System",
+					"sid": 983922771382859,
+					"parameters": {
+						"width": "3416",
+						"height": "1920"
+					}
+				}
+			],
+			"sid": 143945067566907
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 851857044369036,
+					"parameters": {
+						"key": 8
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 588075850245599,
+					"parameters": {
+						"layout": "Title Screen"
+					}
+				}
+			],
+			"sid": 340306439334278
+		}
+	],
+	"sid": 985345144402184
+}
